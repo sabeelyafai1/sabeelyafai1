@@ -1,0 +1,107 @@
+.contact {
+  padding: var(--spacing-2xl) 0 0 0;
+  background: linear-gradient(180deg, var(--card-bg) 0%, var(--dark-bg) 100%);
+}
+
+.contact-description {
+  text-align: center;
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto var(--spacing-xl);
+  line-height: 1.8;
+}
+
+.social-links {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--card-bg);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: all 0.3s ease;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.social-link:hover .social-icon {
+  transform: scale(1.1);
+}
+
+.social-link.linkedin {
+  border-color: #0077B5;
+}
+
+.social-link.linkedin:hover {
+  background: #0077B5;
+  box-shadow: 0 8px 24px rgba(0, 119, 181, 0.4);
+}
+
+.social-link.email {
+  border-color: #D14836;
+}
+
+.social-link.email:hover {
+  background: #D14836;
+  box-shadow: 0 8px 24px rgba(209, 72, 54, 0.4);
+}
+
+.social-link.github {
+  border-color: #333;
+}
+
+.social-link.github:hover {
+  background: #333;
+  box-shadow: 0 8px 24px rgba(51, 51, 51, 0.4);
+}
+
+.footer {
+  background: var(--dark-bg);
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .social-links {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 var(--spacing-md);
+  }
+
+  .social-link {
+    justify-content: center;
+  }
+
+  .contact-description {
+    font-size: 1rem;
+    padding: 0 var(--spacing-sm);
+  }
+}
